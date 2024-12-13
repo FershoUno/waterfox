@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Version=VERSION_PACKAGE
+Name=NAME_PACKAGE
+Keywords=Internet;
+Exec=NAME_PACKAGE %u
+Icon=NAME_PACKAGE-icon
+Terminal=false
+Categories=GTK;Network;WebBrowser;

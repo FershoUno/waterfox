@@ -1,0 +1,10 @@
+Package: NAME_PACKAGE
+Version: VERSION_PACKAGE
+Section: web
+Priority: optional
+Architecture: ARCH_PACKAGE
+Installed-Size: SIZE_PACKAGE
+Maintainer: FershoUno <fersh0un0@gmail.com>
+Old-Maintainer: Alex Kontos
+Homepage: https://www.waterfox.net/
+Description: Waterfox es un navegador esteticamente agradable, enfocado en la velocidad y privacidad de los usuarios.
