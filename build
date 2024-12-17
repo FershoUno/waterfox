@@ -1,6 +1,6 @@
 #!/bin/bash
 
-WATERFOX_BROWSER=$( wget -S --spider -q --max-redirect=0 https://cdn1.waterfox.net/waterfox/releases/latest/linux 2>&1 | grep -i -e "location" -e "linux"  | awk '{print $2}' | tr -d '\n')
+WATERFOX_BROWSER=$(wget -S --spider -q --max-redirect=0 https://cdn1.waterfox.net/waterfox/releases/latest/linux 2>&1 | grep -i -e "location" -e "linux"  | awk '{print $2}' | tr -d '\n')
 
 wget -q --show-progress "$WATERFOX_BROWSER"
 
