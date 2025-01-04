@@ -8,7 +8,7 @@ WATERFOX=$(ls waterfox-* | sed -E 's/([^-]+)-([0-9.]+)\..*/\1 \2/')
 NAME=$(echo $WATERFOX | awk '{print $1}')
 VERSION=$(echo $WATERFOX | awk '{print $2}')
 ARCH="amd64"
-WORK_DIR="$NAME-$VERSION-$ARCH"
+WORK_DIR="${NAME}_${VERSION}_${ARCH}"
 
 mkdir -p $WORK_DIR/{lib,usr/{bin,share/applications,icons/hicolor/scalable/apps}}
 cp -r DEBIAN/ $WORK_DIR/
