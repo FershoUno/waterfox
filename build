@@ -15,8 +15,9 @@ cp -r DEBIAN/ $WORK_DIR/
 cp waterfox.desktop $WORK_DIR/usr/share/applications/
 tar -xvjf waterfox-*.tar.bz2 -C $WORK_DIR/lib/
 ln -s ../../lib/waterfox/waterfox $WORK_DIR/usr/bin/waterfox
+cp icon.svg $WORK_DIR/usr/share/icons/hicolor/scalable/apps/waterfox-icon.svg
 
-wget -q --show-progress https://raw.githubusercontent.com/BrowserWorks/website/refs/heads/main-ssg/public/images/waterfox-icon.svg -P $WORK_DIR/usr/share/icons/hicolor/scalable/apps/
+#wget -q --show-progress https://raw.githubusercontent.com/BrowserWorks/website/refs/heads/main-ssg/public/images/waterfox-icon.svg -P $WORK_DIR/usr/share/icons/hicolor/scalable/apps/
 
 SIZE_WATERFOX=$(du -ks $WORK_DIR)
 sed -i "s/NAME_PACKAGE/$NAME/g" $WORK_DIR/DEBIAN/control
