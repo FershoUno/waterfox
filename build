@@ -10,7 +10,7 @@ VERSION=$(echo $WATERFOX | awk '{print $2}')
 ARCH="amd64"
 WORK_DIR="${NAME}_${VERSION}_${ARCH}"
 
-mkdir -p $WORK_DIR/{lib,usr/{bin,share/applications,icons/hicolor/scalable/apps}}
+mkdir -p $WORK_DIR/{lib,usr/{bin,share/{applications,icons/hicolor/scalable/apps}}}
 cp -r DEBIAN/ $WORK_DIR/
 cp waterfox.desktop $WORK_DIR/usr/share/applications/
 tar -xvjf waterfox-*.tar.bz2 -C $WORK_DIR/lib/
